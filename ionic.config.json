@@ -1,0 +1,7 @@
+{
+  "name": "welyne",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
