@@ -1,0 +1,103 @@
+ion-content{
+    --ion-background-color:#E04428;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 90%;
+     height:90%;
+     padding-top: 5%;
+     padding-bottom:10%;
+}
+.back-logo{
+    background-color: #FDDCD7;
+    margin-left:28%;
+    margin-right: 28%;
+    margin-top:10%;
+    border-radius: 30%;
+
+}
+.font-input{
+    padding-left:10px !important; 
+    font-family:'Nunito', san-serif;
+    font-weight: 500;
+    color:#707070;
+    font-size: 16px;
+}
+.content{
+//position:absolute;
+margin-top : 10%;
+margin-bottom: 7%;
+padding-top: 5%;
+height:68%;
+margin-left: 5%;
+margin-right: 5%;
+background-color: white;
+border-radius: 5%;
+
+}
+
+.buttons-action{
+    margin-left: 5px;
+}
+
+.signup-text{
+    font-size: large;
+    color: #E04428;
+    margin-top:15%;
+    text-transform: none;
+}
+
+.signin-text{
+     color: white;
+     text-transform: none;
+     text-align: center;
+}
+
+ion-input{
+
+    background-color: #ededed;
+    border-radius: 25px;
+    font-size:14px;
+    height:50px;
+
+}
+.actionbutton{
+    background-color: #FFCCC3;
+    color: #E04428;
+    height:50px;
+    border-radius :25px;
+    margin-left: 15px;
+    margin-right: 13px;
+    font-size: 18px;
+    font-family: 'Nunito', san-serif;
+}
+
+.line{
+    border-bottom: 1px solid #E04428;
+    margin-bottom: 16px;
+
+}
+
+.fbbutton{
+    background-color: #3b5998;
+    border-radius: 6px;
+    color:cornsilk;
+    margin-bottom: 12px;
+    font-family: 'Nunito', san-serif;
+    text-transform: none;
+}
+
+.googlebutton{
+    background-color: #ea4335;
+    border-radius: 6px;
+    color:cornsilk;
+    margin-bottom: 12px;
+    font-family: 'Nunito', san-serif;
+    text-transform: none; 
+}
+.ion-padding{
+    padding-top: 5px !important;
+}

@@ -5,11 +5,14 @@ ioni-content.background{
 
 */
 
+ioni-content.background{
+    background-color: #E04428;
+}
+
 .content{
     position:fixed;
-   /* margin-top : 310px;
-    margin-left: 40px;*/
-
+    margin-top : 350px;
+    margin-left: 40px;
 }
 
 .buttons-action{
@@ -18,50 +21,36 @@ ioni-content.background{
 
 .signup-text{
     font-size: x-small;
-    color: #a8a8a8;
     text-align: center;
-    font-family: 'Nunito',san-serif;
+    font-family: 'Nunito',sans-serif;
     text-transform :none;
 }
 
 .signin-text{
     font-size: small;
-
-    font-family: 'Nunito', san-serif;
+    color: #E04428;
+    font-family: 'Nunito', sans-serif;
     text-transform: none;
+    font-weight: bold;
 }
-
+/*
 ion-input{
     background-color: #ededed;
     border-radius: 5px;
     font-size:small;
-    background-color:red;
-    width: 170% !important;
-    margin-left: 2% !important;
-    margin-right: 2% !important;
+    width: 301.5px;
 }
+*/
 
-.actionbutton{
-    background-color: turquoise;
-    color: black;
-  //  border-radius :5px;
-  //  margin-left: 15px;
-   // margin-right: 13px;
-    font-size: small;
-    font-family: 'Nunito', san-serif;
-}
 
 ion-checkbox{
-    background: #3b5998;
-   // border-radius: 5px;
-   // --height: 10px;
-   // --width: 10px;
+    background: #a04eff;
+    border-radius: 5px;
+    --height: 10px;
+    --width: 10px;
     --checkmark-color: white;
     --background-checked: #a04eff;
     --border-color: #a04eff;
-    margin-bottom:7px;
-    margin-left:8px;
-
 }
 
 .line{
@@ -71,10 +60,10 @@ ion-checkbox{
 
 .fbbutton{
     background-color: #3b5998;
- //   border-radius: 6px;
+    border-radius: 6px;
     color:cornsilk;
-   // margin-bottom: 12px;
-    font-family: 'Nunito', san-serif;
+    margin-bottom: 12px;
+    font-family: 'Nunito', sans-serif;
     text-transform: none;
 }
 
@@ -82,36 +71,37 @@ ion-checkbox{
     background-color: #ea4335;
     border-radius: 6px;
     color:cornsilk;
-   // margin-bottom: 12px;
-    font-family: 'Nunito', san-serif;
+    margin-bottom: 12px;
+    font-family: 'Nunito', sans-serif;
     text-transform: none; 
 }
 
-.email,.password{
-    //width:200%;
-    //height: 200%;
-    font-family:'Nunito, san-serif';
-    color: yellow;
-}
-
-
-
-ion-label{
-    display: inline-block;
-    vertical-align:top; 
+.email, .password, .name{
+    padding-left:10px !important; 
     font-family:'Nunito', sans-serif;
 }
 
-.connected{
-    font-size:small; 
-    margin-bottom:3px;
-    color: red;
+
+.have-account{
+    font-size: 8px; 
+    padding-bottom:20px;
+    color:#a8a8a8; 
+    margin-right:10 px;
+    text-transform: none ; 
+    font-family: 'Nunito, san-serif ';
 }
 
-.forgot{
-    font-size:small; 
-    color:#a8a8a8;
-    margin-right:10px; 
-    text-transform:none; 
-    font-family:'Nunito', sans-serif;
+.fbbutton,.googlebutton{
+    width : 80% !important;
+    margin-left: 10% !important;
 }
+
+.content{
+    //  position:fixed;
+      margin : 50% 10% 20% 10%;
+     // padding: 10%;
+     // background-color: #E04428; 
+      width: 80%;
+      border-radius: 20px; 
+      height: 50%;
+  }

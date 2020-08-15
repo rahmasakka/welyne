@@ -17,8 +17,16 @@ const routes: Routes = [
   {
     path: 'sign-up',
     loadChildren: () => import('./sign/sign-up/sign-up.module').then( m => m.SignUpPageModule)
-  }
-  
+  },
+  {
+    path: 'slide',
+    loadChildren: () => import('./test/slide/slide.module').then( m => m.SlidePageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./test/cart/cart.module').then( m => m.CartPageModule)
+  },
+
   
 ];
 @NgModule({

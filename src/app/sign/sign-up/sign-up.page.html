@@ -1,41 +1,42 @@
-<ion-content class="background" style="background-color: #E04428;">
-  <div class="content">
-    <div class="buttons-action">
-      <ion-button fill="clear" color="dark" size="small">
-        <p class="signup-text">Sign Up</p>
-      </ion-button>
-    </div>
+<ion-content>
+  <div class="font-style">
+    <b><p class="signin-text" style="padding-top:9%;font-size: x-large;font-weight: bolder;">Getting Started</p></b>
+       <p class="signin-text"style="padding-bottom:22%">Create an account to continue</p>  
+  </div>
+
+  <div class="back-logo">
+    <img src="../../assets/logo.png" alt="logo" class="center">
+  </div>     
+    
+  <div class="content">  
     <div class="ion-padding">
-      <ion-input ios="ios-contact" md="md-contact" placeholder="Your name" class="name">
-        <ion-icon name="person" style="width: 20px; height: 20px;"></ion-icon>
-      </ion-input>
-      <br>
-      <ion-input placeholder="E-mail" class="email">
-        <ion-icon name="mail" style="width: 20px; height: 20px;" type="password"></ion-icon>
-      </ion-input>
-      <br>
-      <ion-input placeholder="Password" class="password">
-        <ion-icon name="key" style="width: 20px; height: 20px;"></ion-icon>
-      </ion-input>
- 
-    
+        <p class="font-input">Your name</p>
+        <ion-input placeholder="Name">
+        <ion-icon name="person" class="icon"></ion-icon></ion-input> <br>
+        
+        <p class="font-input">Phone Number</p>
+        <ion-input placeholder="Phone number">
+        <ion-icon name="phone-portrait-outline" class="icon"></ion-icon></ion-input><br>
+        
+        <p class="font-input">E-Mail</p>
+        <ion-input placeholder="Phone number">
+        <ion-icon name="mail-outline" class="icon"></ion-icon></ion-input><br>
 
-    
-    <!--ion-item>
-      <ion-label position="floating">Your name</ion-label>
-      <ion-input> 
-        <ion-icon name="person" style="width: 20px; height: 20px;"></ion-icon>
-      </ion-input>
-    </ion-item-->
-    
-
-
+        <p class="font-input" style="margin-top:5px;" minlength="8" required>Password</p>
+        <ion-input placeholder="Password" type="password">
+        <ion-icon name="key" class="icon"></ion-icon></ion-input> <br>
     </div>
-    <ion-button class="actionbutton" fill="clear" expand="full" style="text-transform: none; background-color: #FFCCC3;"><b style="color:#E04428">Sign Up</b></ion-button>
-    <ion-button fill="clear" classe="have-account"><b style="font-size: 9px; color: black">Already Have an account ?</b></ion-button>
-    <ion-button fill="clear" color="dark" size="small" routerLink="/home" routerDirection="root">
-      <p class="signin-text">Sign In</p>
-    </ion-button>
-  </div>  
-  
+
+    <ion-button class="actionbutton" expand="full" fill="clear" style="text-transform:none; ">Sign Up</ion-button>
+
+    <ion-grid>
+        <ion-row>
+        <p style="padding-left: 12px;font-family:'Nunito, san-serif';font-size: 18px;">Already have an account ?</p>
+        <ion-button fill="clear" size="large"routerLink="/sign-in" routerDirection="root">
+          <b><p class="signup-text">Sign In</p></b>
+        </ion-button>
+        </ion-row>
+    </ion-grid>
+
+ </div>
 </ion-content>

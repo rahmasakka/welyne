@@ -9,34 +9,55 @@
       </ion-button>
     </div>
     <div class="ion-padding">
-      <ion-input placeholder="Email" class="email"></ion-input> <br>
-      <ion-input placeholder="Password" class="password"></ion-input> <br>
+           <ion-input placeholder="E-mail" class="email">
+        <ion-icon name="mail" style="width: 20px; height: 20px;" type="password"></ion-icon>
+      </ion-input>
+      <br>
+      <ion-input placeholder="Password" class="password">
+        <ion-icon name="key" style="width: 20px; height: 20px;"></ion-icon>
+      </ion-input>
     </div>
-    <ion-button class="actionbutton" expand="full" fill="clear" style="text-transform:none;"></ion-button>
+    <ion-button class="actionbutton" fill="clear" expand="full" style="text-transform: none; background-color: #FFCCC3; border-radius: 10px;">
+      <b style="color:#E04428">Sign In</b>
+    </ion-button>
     <ion-grid>
-        <ion-row>
-          <ion-col size="6">
-            <ion-checkbox checked>&nbsp;
-              <ion-label>
-                <p class="connected">Stay connected</p>
-              </ion-label>
-            </ion-checkbox>
-          </ion-col>
-          <ion-col size="6">
-              <ion-button fill="clear" class="forgot">
-                <p style="font-size:small;margin-bottom:37.5px;">Forgot password ?</p>
-              </ion-button>
-          </ion-col>
+      <ion-row>
+        <ion-col size="6">
+          <ion-checkbox checked>&nbsp;
+            <ion-label>
+              <p class="connected">Stay connected</p>
+            </ion-label>
+          </ion-checkbox>
+        </ion-col>
+        <ion-col size="6">
+            <ion-button fill="clear">
+              <p style="font-size:small;margin-bottom:37.5px; color: black; margin-right:30%;">Forgot password ?</p>
+            </ion-button>
+        </ion-col>
       </ion-row>
       <ion-row>
-      <ion-col class="line" size="5">
-      </ion-col>
-      <ion-col size="3" style="text-align: center;">Or</ion-col>
-      <ion-col size="3" style="border-bottom: grey solid 1px;"> </ion-col>
-    </ion-row>
+        <ion-col class="line" size="3">
+        </ion-col>
+        <ion-col size="5" style="text-align: center;">Or</ion-col>
+        <ion-col size="3" class="line"> </ion-col>
+      </ion-row>
     </ion-grid>
-    <ion-button class="fbbutton" fill="clear"><b>Facebook</b></ion-button>
-    <ion-button class="googlebutton"fill="clear"><b>Google</b></ion-button>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-sm="6">
+          <ion-button class="fbbutton" fill="clear"><b>Facebook</b></ion-button>
+        </ion-col>
+        <ion-col size="12" size-sm="6">
+          <ion-button class="googlebutton"fill="clear"><b>Google</b></ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+
+
   </div>
-  </ion-content>
-  
+</ion-content>
