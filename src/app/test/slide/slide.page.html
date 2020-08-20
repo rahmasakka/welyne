@@ -11,7 +11,6 @@
 </ion-header>
 
 <ion-content>
-
   <div *ngFor="let cat of items" class="category-block">
     <ion-row no-padding class="category-banner">
       <ion-col text-left button tappable (click)="cat.expanded = !cat.expanded" align-self-center>
@@ -36,6 +35,4 @@
       </ion-slide>
     </ion-slides>
   </div>
-
-
 </ion-content>

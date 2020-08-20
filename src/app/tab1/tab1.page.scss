@@ -1,0 +1,112 @@
+ion-badge{
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right : 0px;
+    border-radius: 100%;
+}
+
+.category-block{
+    margin-bottom: 4px;
+    padding-left:4% !important;
+    
+}
+
+.category-banner{
+    border-left : 8px solid var(--ion-color-secondery);
+    background : var(--ion-color-light);
+    height: 40px;
+    padding: 10px;
+    font-weight: 500px;
+}
+
+.search{
+    font-family:'Nunito', sans-serif;
+    border:2px solid black;
+    padding-left: 100px;
+    margin-left: 10%;
+    width: 80%;
+    background-color: #ededed;
+    border-radius: 25px;
+    font-size:14px;
+    height:50px !important;
+}
+
+/*
+ion-input{
+
+    background-color: #ededed;
+    border-radius: 25px;
+    font-size:14px;
+    height:7%;
+    margin-left: 5%;
+    padding-left: 25px;
+    width: 80%;
+}
+
+*/
+
+.search-outline{
+    padding-left: 5% !important;
+}
+
+.microphone{
+    padding-right: 5% !important;
+}
+
+
+.category-image{
+    border-radius: 30px;
+}
+
+.category{
+    width: 200%;
+}
+/*
+ion-slide{
+    width: 200%;
+}*/
+
+.category-image{
+    width:100px !important;
+    height: 100px !important;
+}
+
+
+.card-content-md {
+    width: 120% !important;
+    padding: 1% 5% !important;
+}
+
+b{
+    margin-top: 10px !important;
+}
+
+.deal-title{
+    font-family: bold;
+    font-size: 75%; 
+    font-family: 'Nunito', sans-serif;
+}
+
+.deal-piece{
+    font-size: 70%; 
+    font-family: 'Nunito', sans-serif; 
+}
+
+.deal-way{
+    letter-spacing: .2rem; 
+    font-family: 'Nunito', sans-serif;
+    font-size: 80%;
+}
+
+.deal-new-price{
+    color:#E04428;
+    font-family: 'Nunito', sans-serif;
+    font-size:14px;
+}
+
+.deal-old-price{
+    text-decoration: line-through;
+    color:grey;
+    font-size:14px;
+}

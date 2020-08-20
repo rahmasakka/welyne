@@ -17,8 +17,7 @@ export class SlidePage implements OnInit {
     centeredSlides:true,
     slidesPerView: 2
   }
-
-
+  
   constructor(private cartService: CartService, private router:Router) { }
 
   ngOnInit() {
@@ -33,10 +32,4 @@ export class SlidePage implements OnInit {
   openCart(){
     this.router.navigate(['cart'])
   }
-
-
-
-
-
-
 }

@@ -36,16 +36,15 @@ export class CartService {
   private cart = [];
   constructor() { }
 
-    getProducts(){
-      return this.data;
-    }
+  getProducts(){
+    return this.data;
+  }
 
-    getCart(){
-      return this.cart;
-    }
+  getCart(){
+    return this.cart;
+  }
 
-    addProduct(product){
-      this.cart.push(product);
-    }
-
+  addProduct(product){
+    this.cart.push(product);
+  }
 }

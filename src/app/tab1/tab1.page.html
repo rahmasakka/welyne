@@ -1,15 +1,60 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Tab1</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-input placeholder="search in thousands of products" type="text" class="search">
+    <ion-icon name="search-outline" class="search-outline"></ion-icon>
+    <!--ion-icon name="mic" class="microphone"></ion-icon-->
+  </ion-input> <br>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div>
+    <ion-row no-padding class="category-banner">
+      <ion-col text-left align-self-center>
+          <b>Explore by Category</b>
+      </ion-col>
+    </ion-row>
+    <ion-slides [options]="sliderConfig" class="category-block">
+      <ion-slide *ngFor="let cat of items" class="category">
+        <div>
+          <ion-card-header>
+            <ion-card-content>
+              <img src="../../assets/{{cat.categorySrc}}.PNG" alt="{{cat.categorySrc}}" class="category-image center"><br>
+              <b>{{cat.categoryName}}</b>
+            </ion-card-content>
+          </ion-card-header>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+
+
+
+
+  <div>
+    <ion-row no-padding class="category-banner">
+      <ion-col text-left align-self-center>
+          <b>Deals of the day</b>
+      </ion-col>
+    </ion-row>
+
+
+    <!--     <ion-slides [options]="sliderConfig" class="category-block" --> 
+      <ion-slides [options]="sliderConfig2" class="category-block">
+        <ion-slide *ngFor="let cat of deals">      
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <img src="../../assets/cream.PNG" alt="cream" class="category-image center"><br>
+              </ion-col>
+              <ion-col size="8">
+                <b class="deal-title">{{cat.dealTitle}}</b> <br>
+                <b class="deal-piece">{{cat.dealPiece}}</b> <br>
+                <b class="deal-way"><ion-icon name="walk"></ion-icon> {{cat.dealWay}} minutes Away</b> <br>
+                <b class="deal-new-price">${{cat.dealNewPrice}}</b> &nbsp; <b class="deal-old-price">${{cat.dealOldPrice}}</b>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <!---->
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>
