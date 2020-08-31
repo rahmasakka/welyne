@@ -3,7 +3,6 @@
     <ion-icon name="search-outline" class="search-outline"></ion-icon>
     <!--ion-icon name="mic" class="microphone"></ion-icon-->
   </ion-input> <br>
-
   <div>
     <ion-row no-padding class="category-banner">
       <ion-col text-left align-self-center>
@@ -24,19 +23,12 @@
     </ion-slides>
   </div>
 
-
-
-
-
-
   <div>
     <ion-row no-padding class="category-banner">
       <ion-col text-left align-self-center>
           <b>Deals of the day</b>
       </ion-col>
     </ion-row>
-
-
     <!--     <ion-slides [options]="sliderConfig" class="category-block" --> 
       <ion-slides [options]="sliderConfig2" class="category-block">
         <ion-slide *ngFor="let cat of deals">      
@@ -54,7 +46,29 @@
             </ion-row>
           </ion-grid>
           <!---->
-      </ion-slide>
+        </ion-slide>
     </ion-slides>
+  </div>
+
+  <div>
+
+
+    <!--ion-slides [options]="sliderConfig2" class="category-block"-->
+     <ion-slides>
+      <ion-slide *ngFor="let dealS of dealSpecial">      
+        <ion-grid>
+          <ion-row class="dealSpecialCard">
+            <ion-col size="4">
+              <img src="../../assets/cream.PNG" alt="cream" class="category-image center"><br>
+            </ion-col>
+            <ion-col size="8">
+              <b class="special-deal-title">{{dealS.dealTitle}}</b> <br>
+              <b class="special-deal-new-price">${{dealS.dealNewPrice}}</b> &nbsp; <b class="special-deal-old-price">${{dealS.dealOldPrice}}</b> <br>
+              <b class="special-deal-available">available until {{dealS.available}}</b> <br>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+  </ion-slides>
   </div>
 </ion-content>

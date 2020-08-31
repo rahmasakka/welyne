@@ -17,6 +17,8 @@
           {{cat.category}}
       </ion-col>
     </ion-row>
+
+<!--
     <ion-slides [options]="sliderConfig">
       <ion-slide *ngFor="let product of cat.products">
         <div *ngIf="cat.expanded">
@@ -34,5 +36,30 @@
         </div>
       </ion-slide>
     </ion-slides>
+
+-->
+
+    <ion-slides [options]="sliderConfig">
+      <ion-slide *ngFor="let product of cat.products">
+        <div *ngIf="cat.expanded">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                {{product.name}} - ${{product.price}}
+              </ion-card-title>
+              <ion-card-content *ngFor="let test of product.ingredients">
+                <img src="https://via.placeholder.com/300x300">
+                <ion-button expand="full" (click)="addToCart(product)">add to ......</ion-button>
+                <b>{{test.fromage}}</b>
+                <b>{{test.thon}}</b>
+              </ion-card-content>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+
+
   </div>
 </ion-content>

@@ -14,8 +14,8 @@ export class SlidePage implements OnInit {
 
   sliderConfig={
     spaceBetween : 10,
-    centeredSlides:true,
-    slidesPerView: 2
+    centeredSlides:false,
+    slidesPerView: 4
   }
   
   constructor(private cartService: CartService, private router:Router) { }

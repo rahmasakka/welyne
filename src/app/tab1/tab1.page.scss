@@ -110,3 +110,44 @@ b{
     color:grey;
     font-size:14px;
 }
+
+
+.dealSpecialCard{
+    background-color:#F4F6AC;
+    width: 80%;
+    margin-left:10%;
+    border-radius: 25px;
+    height: 80%;
+}
+
+.special-deal-new-price{
+    color:#E04428;
+    font-family: 'Nunito', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: .2rem; 
+
+}
+
+.special-deal-old-price{
+    text-decoration: line-through;
+    color:#FFFFFF;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: .2rem; 
+
+}
+
+.special-deal-available{
+    color: #FFFFFF;
+}
+
+
+
+.special-deal-title{
+    color:#21114C;
+    font-size: 50px; 
+    text-transform: uppercase;
+    padding-left: 10% !important;
+
+}

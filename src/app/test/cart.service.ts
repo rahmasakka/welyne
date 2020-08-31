@@ -10,9 +10,31 @@ export class CartService {
       category:'pizza',
       expanded : true,
       products:[
-        {id:0, name:'salami', price:'8'},
-        {id:1, name:'Classic', price:'5'},
-        {id:2, name:'tuna', price:'9'},
+        {
+          id:0, 
+          name:'salami', 
+          price:'8',
+          ingredients:[
+          {
+            fromage:false,
+            thon: true
+          }
+        ]
+      },
+        {id:1, name:'Classic', price:'5', ingredients:[
+          {
+            fromage:false,
+            thon: true
+          }
+        ]
+        },
+        {id:2, name:'tuna', price:'9',
+        ingredients:[
+          {
+            fromage:false,
+            thon: true
+          }
+        ]},
         {id:3, name:'hawai',price:'7'}
       ]
     },
